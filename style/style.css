@@ -467,4 +467,7 @@ footer img{
 	.inner-foot{
 		padding-bottom: 0;
 	}
+	.iframe{
+		height: 185px;
+	}
 }
