@@ -173,12 +173,18 @@ a{
   box-shadow: 0px 9px 29px -9px rgba(0, 0, 0, 0.13);
   transition: all .2s ease-in-out;
 }
-.block:hover {background-color: #BFBFBF;}
+.block:hover .title{
+	border-left: 1.5px solid #263141;
+	border-right: 1.5px solid #263141;
+	border-bottom: 1.5px solid #263141;
+	background-color: #dcdcdc;
+}
 .title{
 	font-size: 20px;
 	border-left: 1.5px solid #37465D;
 	border-right: 1.5px solid #37465D;
 	border-bottom: 1.5px solid #37465D;
+	transition: 0.1s;
 }
 .title p{
 	margin-bottom: 0;
@@ -210,6 +216,9 @@ a{
 #download{
 	width: 100%;
 	text-align: center;
+}
+.container{
+	font-size: 1em;
 }
 .cov-link{
 	width: 100%;
@@ -300,6 +309,11 @@ a{
 	display: -o-flex;
 	display: flex;
 	justify-content: space-around;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
 }
 .box img{
 	border: 2px solid transparent;
@@ -442,14 +456,23 @@ footer img{
 .th:hover{
 	background-color: #DD6F47;
 }
-@media screen and (max-width: 1000px) {
-	.c-th{
-		width: 100%;
+@media screen and (max-width: 1150px) {
+	#events{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
 	}
-	.s-block img{
-		width: 100%;
-		height: 100%;
-		margin: 0;
+	.c-block{
+	width: 48%;
+	margin-left: 1%;
+	margin-bottom: 20px;
 	}
 	.hide{
 		display: none;
@@ -467,8 +490,28 @@ footer img{
 	nav, ul{
 		width: 100%;	
 	}
+	.logo{
+		margin: 0;
+	}
 	#container{
-		max-width: 850px;
+		margin-top: 80px;
+	}
+	#section, #about, #container, .inner-foot, #container-about, .row{
+		width: 90%;
+	}
+	.box{
+		width: 35%;
+    margin-top: 40px;
+	}
+}
+@media screen and (max-width: 500px) {
+	.c-th{
+		width: 100%;
+	}
+	.s-block img{
+		width: 100%;
+		height: 100%;
+		margin: 0;
 	}
 	.c-block{
 	width: 98%;
@@ -485,12 +528,6 @@ footer img{
 	}
 	.half-block{
 		width: 100%;
-	}
-	#section, #about, #container, .inner-foot, #container-about{
-		width: 90%;
-	}
-	#container{
-		margin-top: 80px;
 	}
 	#section{
 		text-align: center;
@@ -513,9 +550,6 @@ footer img{
 	}
 	.mb{
 		margin-bottom: 0;
-	}
-	.logo{
-		margin: 0;
 	}
 	.history{
 		width: 60%;
