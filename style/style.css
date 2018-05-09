@@ -424,7 +424,7 @@ footer img{
 }
 #navmenu p{
 	padding-left: 10px;
-	margin: 25px 0;
+	margin: 20px 0;
 }
 .line{
 	border-bottom: 1px solid #D6DAC2;
@@ -457,6 +457,14 @@ footer img{
 	background-color: #DD6F47;
 }
 @media screen and (max-width: 1150px) {
+	.f-block {
+    width: 100%;
+    height: auto;
+	}
+	.s-block{
+		width: 60%;
+		margin-left: 20%;
+	}
 	#events{
 		display: -webkit-flex;
 		display: -moz-flex;
@@ -544,6 +552,9 @@ footer img{
 	.f-block, .s-block{
 		width: 100%;
 		height: auto;
+	}
+	.s-block{
+		margin: 0;
 	}
 	.row{
 		width: 90%;
