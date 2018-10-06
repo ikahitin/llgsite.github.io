@@ -83,6 +83,20 @@ a{
 	flex-wrap: wrap;
 	margin-bottom: 100px;
 }
+#father{
+	height: 100vh;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	align-content: space-between;
+}
 #container-about{
 	width: 100%;
 	max-width: 1170px;
