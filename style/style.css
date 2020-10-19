@@ -605,3 +605,12 @@ footer img{
 		margin-bottom: 40px;
 	}
 }
+.container{
+	    display: flex;
+    justify-content: center;
+	align-items: center;
+}
+.container a img{
+	height: auto;
+    padding: 0 8px;
+}
