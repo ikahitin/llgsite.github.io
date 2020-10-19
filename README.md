@@ -1,2 +1,2 @@
 # llgsite.github.io
-Lviv Linguistic Gymnasium concept site create by Ivan Kahitin
+Lviv Linguistic Gymnasium concept site createв by Ivan Kahitin
